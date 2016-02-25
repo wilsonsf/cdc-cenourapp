@@ -1,62 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <widget xmlns="http://www.w3.org/ns/widgets" 
-				xmlns:gap="http://phonegap.com/ns/1.0" 
-				id="org.sergiolopes.cenourapp" 
-				version="1.0.0">
+        xmlns:gap="http://phonegap.com/ns/1.0" 
+        id="org.sergiolopes.cenourapp" 
+        version="1.0.0">
 
-	<name>Só de Cenoura</name> 
+  <name>Só de Cenoura</name> 
 
-	<description>Menu do restaurante Só de Cenoura.</description>
+  <description>Menu do restaurante Só de Cenoura.</description>
 
-	<author href="//google.com" email="email@google.com">
-		Autor Bolado
-	</author>
+  <author href="//google.com" email="email@google.com">
+    Autor Bolado
+  </author>
 
-	<!-- <preference name="" value="" /> -->
-	
+  <!-- <preference name="" value="" /> -->
+  
 
-	<!-- ======== Preferências Multi-plataforma ======== -->
-		<!-- Esconde a barra de status -->
-	<preference name="fullscreen" value="true" />
-		<!-- Padrão para todas as plataformas -->
-	<preference name="orientation" value="portrait" />
-	<!-- <preference name="phonegap-version" value="cli-5.2.0" /> -->
+  <!-- ======== Preferências Multi-plataforma ======== -->
+    <!-- Esconde a barra de status -->
+  <preference name="fullscreen" value="true" />
+    <!-- Padrão para todas as plataformas -->
+  <preference name="orientation" value="portrait" />
+  <!-- <preference name="phonegap-version" value="cli-5.2.0" /> -->
 
 
 
-	<!-- Dessa forma define-se preferências específicas por plataform -->
-	<platform name="ios">
-		<preference name="orientation" value="portrait" />
-	</platform>
+  <!-- Dessa forma define-se preferências específicas por plataform -->
+  <platform name="ios">
+    <preference name="orientation" value="portrait" />
+  </platform>
 
-	
-	<!-- ======== Preferências Android ======== -->
-	<preference name="permissions" value="none" />
-	<!-- Define a versão mínima suportada -->
-	<preference name="android-minSdkVersion" value="16" />
-	<!-- Define a versão ideal para a aplicação -->
-	<preference name="android-targetSdkVersion" value="12" />
-	<!-- Define a versão máxima suportada -->
-	<!-- <preference name="android-maxSdkVersion" value="15" /> -->
-	<!-- Onde o App será instalado: internalOnly, auto, preferExternal -->
-	<preference name="android-installLocation" value="auto" />
+  <!-- ======== Indica quais plataformas devem ser compiladas ======== -->
+  <gap:platform name="android" />
 
-	<!-- ======== Preferências iOS ======== -->
-	<!-- Valores: handset, tablet, universal -->
-	<preference name="target-device" value="handset" />
-	<!-- Se o ícone já é renderizado e não deve aplicar o efeito Gloss -->
-	<preference name="prerendered-icon" value="true" />
-	<!-- Detecta telefones, datas etc e transforma em links para interação -->
-	<preference name="detect-data-types" value="true" />
-	<!-- Finaliza a aplicação quando for suspendida -->
-	<preference name="exit-on-suspend" value="true" />
-	<!-- Define a versão mínima de iOS suportada -->
-	<preference name="deployment-target" value="7.0" />
-	<!-- ======== Preferências Windows Phone ======== -->
 
-	<!-- ======== Indica quais plataformas devem ser compiladas ======== -->
-	<gap:platform name="android" />
+  <!-- ======== Preferências Android ======== -->
+  <preference name="permissions" value="none" />
+  <!-- Define a versão mínima suportada -->
+  <preference name="android-minSdkVersion" value="16" />
+  <!-- Define a versão ideal para a aplicação -->
+  <preference name="android-targetSdkVersion" value="12" />
+  <!-- Define a versão máxima suportada -->
+  <!-- <preference name="android-maxSdkVersion" value="15" /> -->
+  <!-- Onde o App será instalado: internalOnly, auto, preferExternal -->
+  <preference name="android-installLocation" value="auto" />
+  <!-- Como a janela da aplicação reage com a exibição do teclado -->
+  <preference name="android-windowSoftInputMode" value="stateVisible|adjustResize" />
+  <!-- Indica a ferramenta para compilar a aplicação -->
+  <preference name="android-build-tool" value="ant|gradle" />
 
-	
+  <!-- ======== Preferências iOS ======== -->
+  <!-- Valores: handset, tablet, universal -->
+  <!-- <preference name="target-device" value="handset" /> -->
+  <!-- Se o ícone já é renderizado e não deve aplicar o efeito Gloss -->
+  <!-- <preference name="prerendered-icon" value="true" /> -->
+  <!-- Detecta telefones, datas etc e transforma em links para interação -->
+  <!-- <preference name="detect-data-types" value="true" /> -->
+  <!-- Finaliza a aplicação quando for suspendida -->
+  <!-- <preference name="exit-on-suspend" value="true" /> -->
+  <!-- Define a versão mínima de iOS suportada -->
+  <!-- <preference name="deployment-target" value="7.0" /> -->
+  
+  <!-- ======== Preferências Windows Phone ======== -->
 
+  
 </widget>
