@@ -11,6 +11,52 @@
 	<author href="//google.com" email="email@google.com">
 		Autor Bolado
 	</author>
+
+	<!-- <preference name="" value="" /> -->
+	
+
+	<!-- ======== Preferências Multi-plataforma ======== -->
+		<!-- Esconde a barra de status -->
+	<preference name="fullscreen" value="true" />
+		<!-- Padrão para todas as plataformas -->
+	<preference name="orientation" value="portrait" />
+	<!-- <preference name="phonegap-version" value="cli-5.2.0" /> -->
+
+
+
+	<!-- Dessa forma define-se preferências específicas por plataform -->
+	<platform name="ios">
+		<preference name="orientation" value="portrait" />
+	</platform>
+
+	
+	<!-- ======== Preferências Android ======== -->
+	<preference name="permissions" value="none" />
+	<!-- Define a versão mínima suportada -->
+	<preference name="android-minSdkVersion" value="16" />
+	<!-- Define a versão ideal para a aplicação -->
+	<preference name="android-targetSdkVersion" value="12" />
+	<!-- Define a versão máxima suportada -->
+	<!-- <preference name="android-maxSdkVersion" value="15" /> -->
+	<!-- Onde o App será instalado: internalOnly, auto, preferExternal -->
+	<preference name="android-installLocation" value="auto" />
+
+	<!-- ======== Preferências iOS ======== -->
+	<!-- Valores: handset, tablet, universal -->
+	<preference name="target-device" value="handset" />
+	<!-- Se o ícone já é renderizado e não deve aplicar o efeito Gloss -->
+	<preference name="prerendered-icon" value="true" />
+	<!-- Detecta telefones, datas etc e transforma em links para interação -->
+	<preference name="detect-data-types" value="true" />
+	<!-- Finaliza a aplicação quando for suspendida -->
+	<preference name="exit-on-suspend" value="true" />
+	<!-- Define a versão mínima de iOS suportada -->
+	<preference name="deployment-target" value="7.0" />
+	<!-- ======== Preferências Windows Phone ======== -->
+
+	<!-- ======== Indica quais plataformas devem ser compiladas ======== -->
+	<gap:platform name="android" />
+
 	
 
 </widget>
